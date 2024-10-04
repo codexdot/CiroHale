@@ -1,0 +1,193 @@
+    :root {
+      --background-color: #f1f1f1;
+      --text-color: #000;
+      --menu-bg-color: white;
+      --menu-text-color: blue;
+      --menu-active-color: blue;
+      
+      --navbar-bg-color: white;
+      --navbar-color: blue;
+      --bar-color: blue;
+      --container-bg-color: #f1f1f1;
+      --line-bg-color: #efefef;
+      --hover-text: white;
+      --toggle-color: Black;
+      --slider-color: white;
+      --search-url: url('/FRONTEND /Files/search.svg');
+    }
+
+    /* Define dark mode variables */
+    .dark-mode {
+      --background-color: black;
+      --text-color: #fff;
+      --menu-bg-color: black;
+      --menu-text-color: white;
+      --menu-active-color: white;
+     
+      --navbar-bg-color: black;
+      --navbar-color: white;
+      --bar-color: white;
+      --container-bg-color: #18191A;
+      --line-bg-color: #000000; /* Dark mode line color */
+      --hover-text: black;
+      --toggle-color: white;
+      --slider-color: black;
+      --search-url: url('/FRONTEND /Files/whitesearch-icon.svg');   
+}
+ .navbar-icons2 img:hover {
+  background-color: var(--slider-color);
+  color: var(--hover-text);
+  border: 2px solid var(--menu-active-color);
+}
+
+ .navbar-icons2 img {
+                 height: 30px;
+                 width: 30px;
+                 padding: 3px;
+                 margin: 1px;
+                border-radius: 50%;
+
+               }
+.navbar-icons2.active {
+  border: 2px solid var(--menu-active-color);
+  padding: -3px;
+  margin: -4px;
+  border-radius: 50%;
+  transition: border 0.3s ease
+}
+      
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.chat-container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-bg-color);
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-color);
+    display: flex;
+  
+    padding: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.call,.back,.dots {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+.chat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.last-seen {
+    font-size: 12px;
+}
+
+/* Chat Body */
+.chat-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    background-image: url("background-pattern.png");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Message Styling */
+.message {
+    max-width: 60%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 5px 0;
+    font-size: 14px;
+    position: relative;
+}
+
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end; /* Aligns sent messages to the right */
+    text-align: right; /* Text aligns to the right */
+}
+
+.received {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    align-self: flex-start; /* Aligns received messages to the left */
+}
+
+.timestamp {
+    font-size: 10px;
+    margin-top: 5px;
+    color: #999;
+}
+
+.date-separator {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 12px;
+    color: var(--menu-active-color);
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+   margin: 10px;
+   
+   
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--navbar-bg-color);
+    border-radius: 20px;
+    color: var(--menu-active-color);
+}
+
+#send-button {
+    background-color: var(--navbar-bg-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+

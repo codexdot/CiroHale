@@ -1,0 +1,756 @@
+    /* Define light mode variables */
+    :root {
+      --background-color: #f1f1f1;
+      --text-color: #000;
+      --menu-bg-color: #fff;
+      --menu-text-color: darkblue;
+      --menu-active-color: blue;
+    }
+
+    /* Define dark mode variables */
+    .dark-mode {
+      --background-color: #black;
+      --text-color: #fff;
+      --menu-bg-color: #333;
+      --menu-text-color: #fff;
+      --menu-active-color: #4caf50;
+    }
+
+    /* Common styling for body */
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+ /* Custom styles for the side menu */
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      right: 0;
+      background-color: var(--menu-bg-color);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      color: var(--menu-text-color);}
+      /* Side Navigation Menu */
+    
+
+    .sidenav a {
+      padding: 2px 2px 2px 32px;
+      text-decoration: none;
+      font-size: 12px;
+      color: var(--menu-text-color);
+      display: block;
+      transition: 0.3s;
+        
+    }
+    .side1, .side2, .side3, .side4 {
+      border-bottom: 3px solid var(--container-bg-color);
+    }
+    
+/* Responsive for smaller screens */
+@media screen and (max-height: 450px) {
+  .side-nav a { font-size: 18px; }
+}
+    .sidenav a:hover {
+      background-color: var(--menu-active-color);
+      color: white;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    
+  /* /* Hamburger menu bars */
+    .sidemenu {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: var(--bar-color);
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+
+    /* Rotating the bars when clicked */
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    /* Make sure the header stays fixed on top */
+    .navbar {
+      background-color: #f8f9fa;
+
+     
+    }
+    .navbar a{
+      
+      color: darkblue;
+    }
+    .logo {
+      margin-right: 10px;
+    }
+    
+    
+  
+
+
+
+ 
+    /* Common styles for box shadows */
+    .box-shadow {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /* Sticky bottom menu */
+    .menu {
+      background-color: #f1f1f1;
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      z-index: 999;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    /* Styling the links inside the navigation bar */
+    .menu a {
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      color: darkblue;
+      font-size: 14px;
+    }
+
+    .menu a img {
+      height: 40px;
+      width: 40px;
+      margin-bottom: 5px;
+    }
+
+    /* Highlight the active link */
+    .menu a:active {
+      background-color: blue;
+      color: white;
+      padding: 14px;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Body containers styling */
+    .container {
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 20px;
+      height: 150px;
+      width: 100%;
+      max-width: 350px;
+    }
+
+ 
+
+    /* Hide class for additional content */
+    .hide {
+      background-color: blue;
+      height: 100px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      text-align: center;
+      padding-top: 30px;
+      color: white;
+      display: none;
+    }
+
+    /* For rounded images in the nav */
+    .rounded-circle {
+      border-radius: 50%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Blank space */
+    .blank {
+      background-color: #efefef;
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+    }
+    
+    
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+    /* The switch container */
+    .theme-switch-wrapper {
+      margin: 20px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Theme toggle switch */
+    .theme-switch input {
+      display: none;
+    }
+
+    .slider {
+      position: relative;
+      cursor: pointer;
+      width: 50px;
+      height: 24px;
+      background-color: green;
+      border-radius: 34px;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--menu-active-color);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    .menu {
+      background-color: var(--menu-bg-color);
+      color: var(--menu-text-color);
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      z-index: 999;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .menu a {
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      color: var(--menu-text-color);
+      font-size: 14px;
+    }
+
+    .menu a img {
+      height: 40px;
+      width: 40px;
+      margin-bottom: 5px;
+    }
+
+    .menu a:active {
+      background-color: var(--menu-active-color);
+      color: grey;
+      padding: 14px;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+    }
+  
+  
+  
+  
+ 
+    /* Define light mode variables */
+    :root {
+      --background-color: #f1f1f1;
+      --text-color: #000;
+      --menu-bg-color: white;
+      --menu-text-color: blue;
+      --menu-active-color: blue;
+      
+      --navbar-bg-color: white;
+      --navbar-color: blue;
+      --bar-color: blue;
+      --container-bg-color: #f1f1f1;
+      --line-bg-color: #efefef;
+      --hover-text: white;
+      --toggle-color: Black;
+      --slider-color: white;
+      --search-url: url('/FRONTEND /Files/search.svg');
+    }
+
+    /* Define dark mode variables */
+    .dark-mode {
+      --background-color: black;
+      --text-color: #fff;
+      --menu-bg-color: black;
+      --menu-text-color: white;
+      --menu-active-color: white;
+     
+      --navbar-bg-color: black;
+      --navbar-color: white;
+      --bar-color: white;
+      --container-bg-color: #18191A;
+      --line-bg-color: #000000; /* Dark mode line color */
+      --hover-text: black;
+      --toggle-color: white;
+      --slider-color: black;
+      --search-url: url('/FRONTEND /Files/whitesearch-icon.svg');   
+      }
+    /* Apply CSS variables */
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+     font-family: 'Roboto', sans-serif; /* Default font */
+}
+     /*removes scrollbar visibility*/
+     body::-webkit-scrollbar-thumb {
+       display: none;
+     }
+     h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+     }
+     
+     .container .post p {
+    font-family: 'Open Sans', sans-serif; /* Different font for body text */
+    font-weight: 400;
+     }
+     
+     button {
+    font-family: 'Arial', sans-serif;
+     }
+
+    .navbar {
+      background-color: var(--navbar-bg-color);
+      color: var(--navbar-color)
+    }
+     .navbar a {color: var(--navbar-color)
+    }
+
+    .container {
+      background-color: var(--container-bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .sidenav {
+      background-color: var(--menu-bg-color);
+      color: var(--menu-text-color);
+      z-index: 998;
+    }
+
+    .sidenav a {
+      color: var(--menu-text-color);
+    }
+
+    .sidenav a:hover {
+      background-color: var(--menu-active-color);
+      color: white;
+    }
+
+    .line {
+      background-color: var(--line-bg-color);
+      height: 5px;
+      width: 100%;
+      margin: 10px 0;
+    }
+    
+.sidenav a:hover {
+  background-color: var(--menu-active-color);
+  color: var(--hover-text);
+}
+
+/* Bottom menu */
+.menu {
+  background-color: var(--menu-bg-color);
+}
+
+.menu a {
+  color: var(--menu-text-color);
+}
+
+.menu a.active {
+  background-color: var(--menu-active-color);
+  color: var(--hover-text);
+  padding: 14px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+    /* Other styles omitted for brevity */
+    
+  /* Common styles for box shadows */
+  .box-shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* Sticky bottom menu */
+  .menu {
+    background-color: var(--menu-bg-color);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 999;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+  }
+
+  .menu a {
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    color: var(--menu-text-color);
+    font-size: 10px;
+  }
+
+  .menu a img {
+    height: 15px;
+    width: 15px;
+    margin-bottom: 5px;
+  }
+
+  /* Body containers styling */
+  .container { 
+    background-color: var(--container-bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    margin-bottom: 1px;
+    padding: 1px;
+    height: 200px;
+    width: 100%;
+    max-width: 100vw;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container::-webkit-scrollbar{
+    width: 0;
+  }
+
+   .buttressup {
+    background-color: var(--container-bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    margin-bottom: 2.2px;
+    padding: 20px;
+    height: 114px;
+    width: 100%;
+    max-width: 100vw;
+    transition: background-color 0.3s, color 0.3s;
+       
+   }
+  .buttressdown {
+    background-color: var(--container-bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    margin-bottom: 70px;
+    padding: 1px;
+    height: 13px;
+    width: 100%;
+    max-width: 100vw;
+    transition: background-color 0.3s, color 0.3s;
+     }
+
+  /* Rounded images in the nav */
+  .rounded-circle {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Blank space */
+  .blank {
+    background-color: #efefef;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+    /* (Keep the existing styles for menu, box-shadow, etc.) */
+    
+    /* Switch Slider CSS */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--toggle-color);
+  color: white;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: var(--slider-color);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--toggle-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+
+
+
+
+        .navbar img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .navbar-icons img {
+            height: 25px;
+            width: 25px;
+            margin-left: 15px;
+        }
+        .navbar-icons {
+            scroll: hidden
+            
+        }
+        
+     
+        
+        .navbar-icons2 img:hover {
+  background-color: var(--slider-color);
+  color: var(--hover-text);
+  border: 2px solid var(--menu-active-color);
+}
+
+ .navbar-icons2 img {
+                 height: 30px;
+                 width: 30px;
+                 padding: 3px;
+                 margin: 1px;
+                border-radius: 15px;
+           margin-left: 2px;
+               }
+.navbar-icons2 img.active {
+      background-color: var(--slider-color);
+      color: grey;
+      padding: 3px;
+      padding-left: 2px;
+      border-radius: 15px;
+      transition: background-color 0.3s ease;
+      transition: border 0.3s ease;
+    }     
+    
+    .search { 
+          src: var(--search-url);
+          
+        }
+        .plus {
+          background-image: var(--icon-url);
+        }
+        /* Container for the input below the navigation bar */
+        .post-input-container {
+            padding: 7px;
+            margin-top: 2px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            margin: 1px;
+            background-color: var(--container-bg-color);
+            color: var(--text-color);
+            display: flex;
+            width: 100%;
+            max-width: 100vw;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Profile picture */
+        .post-input-container img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 2px solid var(--menu-active-color); /* Online indicator */
+            
+        }
+
+        /* Input field container */
+        .input-field {
+            background-color: white;
+            color: var(--menu-active-color);
+            padding: 10px;
+            flex-grow: 1;
+            border-radius: 20px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Input placeholder text */
+        .input-field span {
+            color: #B0B3B8;
+            font-size: 16px;
+        }
+
+        /* Photo button */
+        .photo-button {
+            display: flex;
+            align-items: center;
+            color: var(--menu-active-color);
+       
+        }
+
+        .photo-button img {
+            height: 25px;
+            width: 25px;
+            margin-right: 5px;
+            border:0;
+        }
+   
+   
+  
+  /* General Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Profile Section at the top of the sidebar */
+.profile-section {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 3px solid var(--container-bg-color);
+}
+
+.profile-section .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 7px;
+}
+
+.profile-section h3 {
+  color: var(--menu-active-color);
+  margin: 5px 0;
+}
+.profile-section p {
+  color: var(--menu-active-color);
+  margin: 5px 0;
+  font-size: 10px;
+}
+
+
+
+
+/* For Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  opacity: 0;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Set scrollbar width */
+  scrollbar-color: transparent transparent; /* Set scrollbar color */
+}
+.navbar-icons2.active {
+  border: 2px solid var(--menu-active-color);
+  padding: -3px;
+  margin: -4px;
+  border-radius: 50%;
+  transition: border 0.3s ease
+}

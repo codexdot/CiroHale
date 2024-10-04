@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>CiroHale</title>
+      
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0000FF; /* Light background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center items vertically */
+            align-items: center;
+            text-align: center;
+            height: 100%; /* Ensure the container spans the full height */
+            width: 100%;
+            position: relative;
+            padding: 20px; /* Padding for the container */
+        }
+
+        /* Login form styling */
+        .login-form {
+            background-color: white; /* Light background for the form */
+            border-radius: 20px;
+            padding: 20px;
+           
+            width: 280px; /* Fixed width for the form */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Space between logo and form */
+        }
+
+        .input-field {
+            width: 92%;
+            padding: 10px;
+            margin: 20px 0;
+            border: 2px solid #0000FF;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0000FF; /* Primary button color */
+            border: none;
+            border-radius: 20px;
+            color: #f1f1f1;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: mediumblue;
+            
+        }
+
+        /* Google login button styling */
+        .google-login {
+            background-color: black; /* Google red */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+     .box-shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 3px 0 rgba(0, 0, 0, 0.19);
+  }
+        /* App name styling */
+        .app-name {
+            position: absolute;
+            bottom: 30px; /* Adjust this value for specific bottom padding */
+            width: 100%;
+            text-align: center;
+            color: #000; /* Black text color */
+            font-size: 36px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            padding-bottom: 20px; /* Additional bottom padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="container box-shadow">
+        
+        <div class="login-form">
+            <input type="text" class="input-field" id="username" placeholder="Username" required>
+            <input type="password" class="input-field" id="password" placeholder="Password" required>
+            <button class="login-button" id="login-button">Login</button>
+
+            <!-- Google Login Button (non-functional) -->
+            <button class="google-login">Login with Google</button>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to another page when clicking the login button
+        document.getElementById('login-button').onclick = function() {
+            // Retrieve user input (optional)
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Optionally log the user input (for testing purposes)
+            console.log('Username:', username);
+            console.log('Password:', password);
+            
+            // Redirect to the desired page
+            window.location.href = "/FRONTEND /PAGE HTML /CiroSocial Pages/Home.html"; // Update with your target URL
+        };
+    </script>
+</body>
+</html>

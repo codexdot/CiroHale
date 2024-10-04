@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiroHale</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/FRONTEND /Files/logo.png" class="logo" alt="App Logo">
+
+        <div class="loading-dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <h1 class="app-name">CiroHale</h1>
+    </div>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0000FF; /* Blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items to the top */
+            align-items: center;
+            text-align: center;
+            height: 100%; /* Ensure the container spans the full height */
+            width: 100%;
+            position: relative;
+            padding-top: 50px; /* Padding at the top for spacing */
+        }
+
+        .logo {
+          margin-top: 200px;
+            width: 100px; /* Adjusted size for visibility */
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #f1f1f1; /* White border for the logo */
+            margin-bottom: 30px; /* Space between logo and loading dots */
+        }
+
+        /* Loading dots container */
+        .loading-dots {
+            display: flex;
+            gap: 5px; /* Spacing between the dots */
+            margin-bottom: 20px; /* Space between loading dots and app name */
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: #cfcfcf; /* Light gray for inactive dots */
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1s infinite ease-in-out;
+        }
+
+        /* Individual animation delays for each dot */
+        .dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .dot:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+        .dot:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+        .dot:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+        .dot:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        /* Keyframes to animate the dots */
+        @keyframes pulse {
+            0%, 20% {
+                background-color: #cfcfcf; /* Inactive dot color */
+            }
+            50% {
+                background-color: #4285f4; /* Blue color when active */
+            }
+            100% {
+                background-color: #cfcfcf; /* Back to inactive */
+            }
+        }
+
+        /* App name styling fixed at the bottom */
+        .app-name {
+            position: absolute;
+            bottom: 30px; /* Adjust this value for specific bottom padding */
+            width: 100%;
+            text-align: center;
+            color: #ffffff; /* White text color */
+            font-size: 36px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            padding-bottom: 20px; /* Additional bottom padding */
+        }
+    </style>
+
+    <script>
+        // JavaScript to automatically redirect after 3 seconds
+        setTimeout(function() {
+            window.location.href ="/FRONTEND /PAGE HTML /Initial Load Pages/login.html"; // Redirect to the next page (replace with your target URL)
+        }, 5000); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+</html>

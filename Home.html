@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="blue" id="theme-color-meta">
+
+  <title>CiroHale</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/FRONTEND /PAGE CSS/FOUNDATION.css">
+  <link rel="stylesheet" href="/FRONTEND /PAGE CSS/CiroSocial Pages/Home.css">
+  
+  <script src="/FRONTEND /PAGE JS/CiroSocial Pages/Home.js"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode"> <!-- Start with light mode -->
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center">
+        <img src="/FRONTEND /Files/logo.png" alt="Logo" width="30" height="30" class="logo rounded-circle">
+        <strong>CiroHale</strong>
+      </a>
+      <div class="navbar-icons">
+          <img src="/FRONTEND /Files/search.png" alt="Search">
+            <img src="/FRONTEND /Files/plus.png" alt="Add">
+           
+        </div>
+      <!-- Hamburger Menu -->
+      <div class="sidemenu" onclick="toggleSideNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Side Navigation Menu -->
+  <div id="mySidenav" class="sidenav">
+    
+      <!-- User Profile Section -->
+    <div class="profile-section">
+      <img src="/FRONTEND /Files/profile-picture.jpg" alt="User Avatar" class="avatar">
+      <h3><strong>Dr. Jessy</strong></h3>
+      <p>@celebritydoctor</p>
+    </div>
+
+<div class="side1">
+    <a href="#"><strong>About Me</strong></a>
+    <a href="#"><strong>Friends</strong ></a>
+    <a href="#"><strong>Groups</strong></a>
+    <a href="#"><strong>Notifications</strong></a>
+    <a href="#"><strong>Search</strong></a>
+    <a href="#"><strong>Saved</strong></a>
+ </div>
+ <div class="side2"><strong>
+    <a href="#">Raise Funds</a>
+    <a href="#">Consultants</a>
+    <a href="#">Appointments</a>
+     <a href="#">Prescriptions</a></strong>
+  </div>
+  <div class="side3"><strong>
+    <a href="#">CiroClerk Ai</a>
+    <a href="#">CiroMonitor</a>
+    <a href="#">Ciro Health Card</a>
+    <a href="#">Ciro Gadget</a></strong>
+  </div>
+   
+    <div class="side4"><strong>
+      <a href="#settings" class="menu-item">
+        <i class="fas fa-cog"></i> Settings
+      </a>
+      <a href="/FRONTEND /PAGE HTML /Initial Load Pages/login.html" class="menu-item">
+        <i class="fas fa-sign-out-alt"></i> Log Out
+      </a></strong>
+    </div>
+    
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="theme-checkbox">
+        <input type="checkbox" id="theme-checkbox" onclick="toggleTheme()">
+        <span class="slider"></span>
+      </label>
+      <span><strong>Theme</strong></span>
+    </div>
+  </div>
+  
+ 
+
+  <!-- Main content containers with separators -->
+  
+    <div class="buttressup box-shadow">
+    <p></div>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top" style="padding-top: 75px; z-index: 997;">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- Home Icon (Active by default) -->
+    <a href="/FRONTEND /PAGE HTML /CiroSocial Pages/home.html" class="active">
+      <div class="navbar-icons2 active">
+        <img src="/FRONTEND /Files/home.png" alt="Home">
+      </div>
+    </a>
+
+    <!-- Friends Icon -->
+    <a href="/FRONTEND /PAGE HTML /CiroSocial Pages/friends.html">
+      <div class="navbar-icons2">
+        <img src="/FRONTEND /Files/friends.png" alt="Friends">
+      </div>
+    </a>
+
+    <!-- Chat Icon -->
+    <a href="/FRONTEND /PAGE HTML /CiroSocial Pages/chat.html">
+      <div class="navbar-icons2">
+        <img src="/FRONTEND /Files/chat.png" alt="Chat">
+      </div>
+    </a>
+
+    <!-- Videos Icon -->
+    <a href="/FRONTEND /PAGE HTML /CiroSocial Pages/videos.html">
+      <div class="navbar-icons2">
+        <img src="/FRONTEND /Files/videos.png" alt="Videos">
+      </div>
+    </a>
+
+    <!-- CrowdFund Icon -->
+    <a href="/FRONTEND /PAGE HTML /CiroSocial Pages/crowdfund.html">
+      <div class="navbar-icons2">
+        <img src="/FRONTEND /Files/crowdfund.png" alt="CrowdFund">
+      </div>
+    </a>
+
+    <!-- Notifications Icon -->
+    <a href="/FRONTEND /PAGE HTML /CiroSocial Pages/notification.html">
+      <div class="navbar-icons2">
+        <img src="/FRONTEND /Files/notification.png" alt="Notifications">
+      </div>
+    </a>
+  </div>
+</nav>
+  <div class="container box-shadow" style="height: 70px; padding:1px">
+    <p>
+        <div class="post-input-container" >
+        <!-- Profile Picture -->
+        <img src="/FRONTEND /Files/profile-picture.jpg" alt="Profile Picture">
+        
+        <!-- Input field -->
+        <div class="input-field">
+            <span>What's on your mind?</span>
+        </div>
+
+        <!-- Photo button -->
+        <div class="photo-button">
+            <img src="/FRONTEND /Files/media.png" alt="Photo">
+            <span>Post</span>
+        </div>
+    </div>
+
+
+      
+    </p>
+  </div>
+
+
+ 
+
+  <div class="container box-shadow">
+    <p>Content area 1</p>
+  </div>
+ 
+
+  <div class="container box-shadow">
+    <p>Content area 2</p>
+  </div>
+
+
+
+  <div class="container box-shadow">
+    <p>Content area 3</p>
+  </div>
+  
+  
+    <div class="container box-shadow">
+      <p>Content area 4</p>
+    </div>
+  
+  
+  
+    <div class="container box-shadow">
+      <p>Content area 5</p>
+    </div>
+   
+  
+    <div class="container box-shadow">
+      <p>Content area 6</p>
+    </div>
+  
+   
+  
+    <div class="container box-shadow">
+      <p>Content area 7</p>
+    </div>
+    <div class="buttressdown box-shadow"></div>
+  <!-- Fixed bottom menu -->
+  <nav class="menu box-shadow">
+    <a href="/FRONTEND /PAGE HTML /CiroWallet Pages/wallet.html"><img src="/FRONTEND /Files/wallet.png" class="rounded-circle" alt="Wallet"><br>Wallet</a>
+    <a href="/FRONTEND /PAGE HTML /CiroHealth Pages/health.html"><img src="/FRONTEND /Files/health.png" class="rounded-circle" alt="Health"><br>Health</a>
+    <a class="active" href="/FRONTEND /PAGE HTML /CiroSocial Pages/Home.html"><img src="/FRONTEND /Files/social1.svg" class="rounded-circle" alt="Social"><br>Social</a>
+    <a  href="/FRONTEND /PAGE HTML /CiroAccess Pages/access.html"><img src="/FRONTEND /Files/access.png" class="rounded-circle" alt="Access"><br>Access</a>
+    <a href="/FRONTEND /PAGE HTML /CiroStore Pages/store.html"><img src="/FRONTEND /Files/store.png" class="rounded-circle" alt="Store"><br>Store</a>
+  </nav>
+  
+  
+  <!-- Other content remains the same -->
+</body>
+</html>
+
+
+
+
